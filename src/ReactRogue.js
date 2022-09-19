@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
 import InputManager from "./InputManager";
-import Player from "./Player";
 import World from "./World";
 
 const ReactRogue = ({ width, height, tilesize }) => {
@@ -12,9 +11,19 @@ const ReactRogue = ({ width, height, tilesize }) => {
     console.log(`handle input: ${action}:${JSON.stringify(data)}`);
     let newWorld = new World();
     Object.assign(newWorld, world);
-    newPlayer.move(data.x, data.y);
-    setPlayer(newPlayer);
+    newWorld.movePlayer(data.x, data.y);
+    setWorld(newWorld);
   };
+
+  useEffect(()=>{
+    console.log("Create Map!");
+    let newWorld = new World();
+    Object.assign(newWorld, world);
+    newWorld.createCellularMap();
+    newWorld.moveToSpace(world.player);
+    setWorld(newWorld);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[]);
 
   useEffect(() => {
     console.log("Bind input");
@@ -31,7 +40,6 @@ const ReactRogue = ({ width, height, tilesize }) => {
     const ctx = canvasRef.current.getContext("2d");
     ctx.clearRect(0, 0, width * tilesize, height * tilesize);
     world.draw(ctx);
-    player.draw(ctx);
   });
   return (
     <canvas
