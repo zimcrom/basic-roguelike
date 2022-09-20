@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import ReactRogue from "./ReactRogue";
+import ReactRogue from "./Components/ReactRogue.js";
 
 const App = () => (
   <div className="App">
