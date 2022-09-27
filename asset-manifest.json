@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/basic-roguelike/static/css/main.073c9b0a.css",
+    "main.js": "/basic-roguelike/static/js/main.1dc5f803.js",
+    "static/js/787.9b93b11e.chunk.js": "/basic-roguelike/static/js/787.9b93b11e.chunk.js",
+    "index.html": "/basic-roguelike/index.html",
+    "main.073c9b0a.css.map": "/basic-roguelike/static/css/main.073c9b0a.css.map",
+    "main.1dc5f803.js.map": "/basic-roguelike/static/js/main.1dc5f803.js.map",
+    "787.9b93b11e.chunk.js.map": "/basic-roguelike/static/js/787.9b93b11e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.1dc5f803.js"
+  ]
+}
