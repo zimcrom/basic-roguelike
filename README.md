@@ -38,5 +38,5 @@ I plan to add indicators to the screen for the players stats, make the game more
 
 ## Links
 - [Repo Link](https://github.com/zimcrom/basic-roguelike)
-- Site will be deployed in the future
+- [Deployed Link](https://zimcrom.github.io/basic-roguelike)
 
